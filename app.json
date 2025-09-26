@@ -4,33 +4,70 @@
     "slug": "boomerang",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "src/assets/images/icon.png",
     "scheme": "boomerang",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.skit.boomerang"
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "src/assets/images/android-icon-foreground.png",
+        "backgroundImage": "src/assets/images/android-icon-background.png",
+        "monochromeImage": "src/assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "src/assets/images/favicon.png",
+      "bundler": "metro",
+      "name": "Boomerang",
+      "shortName": "Boomerang",
+      "lang": "fr",
+      "scope": "/",
+      "startUrl": "/",
+      "display": "standalone",
+      "orientation": "portrait",
+      "themeColor": "#E6F4FE",
+      "backgroundColor": "#ffffff",
+      "description": "Application Boomerang - Une expérience web progressive",
+      "categories": [
+        "productivity",
+        "utilities"
+      ],
+      "icons": [
+        {
+          "src": "src/assets/images/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "src/assets/images/icon-512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        },
+        {
+          "src": "src/assets/images/icon-maskable.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable"
+        }
+      ],
+      "manifestPath": "manifest.json"
     },
     "plugins": [
       "expo-router",
+      "expo-notifications",
+      "expo-application",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "src/assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
