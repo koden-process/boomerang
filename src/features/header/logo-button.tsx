@@ -10,7 +10,7 @@ export function LogoButton({ onPress }: LogoButtonProps) {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress} activeOpacity={0.7}>
       <Image
-        source={require('@/src/assets/images/react-logo.png')}
+        source={require('@/assets/images/react-logo.png')}
         style={styles.logo}
         contentFit="contain"
       />
